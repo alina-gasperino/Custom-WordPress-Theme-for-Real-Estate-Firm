@@ -1,0 +1,4 @@
+<files "google*.json">
+Order Allow,Deny
+Deny from all
+</files>
