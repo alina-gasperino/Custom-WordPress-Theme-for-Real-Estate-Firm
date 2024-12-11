@@ -1,0 +1,141 @@
+/* Filter
+   ========================================================================== */
+
+//* Box
+
+.filter-box {
+	margin-right: 0.1rem;
+	&>label {
+		display: none;
+	}
+}
+
+//* Button
+
+.filter-button {
+	margin-right: 8px;
+	.submenu {
+		position: absolute;
+		display: none;
+		background: white;
+		border: 1px solid #b7b7b7;
+		padding: 1.25rem;
+		margin-top: 20px;
+		width: 400px;
+		z-index: 120;
+		border-radius: 0.5rem;
+		@media (max-width: 47.5rem) {
+			display: block;
+			position: relative;
+			width: 100%;
+			border: none;
+			margin: 0;
+			padding: 1.25rem 0;
+		}
+		.heading {
+			white-space: nowrap;
+			margin: 0 0 20px;
+		}
+		.filter-option {
+			background: white;
+			color: $gray-darker;
+			border: 1px solid $gray-light;
+			border-radius: 100rem;
+			padding: 0.2rem 1rem;
+			margin: 0 0.25rem 0.5rem 0;
+			display: inline-block;
+			&:hover,
+			&.active {
+				border-color: $lightblue;
+				background: $lightblue;
+				color: $blue;
+				cursor: pointer;
+			}
+			&:focus {
+				outline: none;
+			}
+			.close {
+				margin-left: 5px;
+				vertical-align: -10%;
+			}
+			&.rounded {
+				border-radius: 50px;
+				padding: 0 2px 0 10px;
+			}
+		}
+	}
+	&>button>.count {
+		background: white none repeat scroll 0 0;
+		border-radius: 100%;
+		color: black;
+		margin: 0 3px;
+		width: 16px;
+		text-align: center;
+	}
+	&.active .submenu {
+		display: block;
+	}
+	.filter-section {
+		margin-bottom: 1.5rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	button.toggle {
+		border-radius: 100rem;
+		border: 1px solid $gray-light;
+		padding: 3px 10px 3px 16px;
+		&:focus {
+			outline: none;
+		}
+	}
+	&:hover button.toggle,
+	&.active button.toggle,
+	&.filtered button.toggle {
+		background: $lightblue;
+		border-color: $lightblue;
+		color: $blue;
+	}
+}
+
+//* Buttons
+
+.filter-buttons {
+	display: inline-block;
+}
+
+//* Toggle
+
+@media only screen and (min-width: 989px) {
+	.filter-toggle {
+		display: none;
+	}
+}
+
+//* Typeahead
+.tt-input {
+	border: 1px solid #b7b7b7;
+	border-radius: 0.5rem;
+}
+.tt-input,
+.tt-hint {
+	width: 100%;
+	display: block;
+	padding: 0.5rem 1rem;
+}
+.tt-menu {
+	background: white;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	width: 100%;
+}
+.tt-suggestion {
+	line-height: 18px;
+	padding: 5px 10px;
+}
+.tt-cursor,
+.tt-suggestion:hover {
+	background: #387deb;
+	cursor: pointer;
+	color: white;
+}

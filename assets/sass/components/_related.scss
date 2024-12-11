@@ -1,0 +1,18 @@
+/* Related
+   ========================================================================== */
+
+.related {
+	&__post {
+		border-bottom: 1px solid gray;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		&:last-child {
+			border-bottom: none;
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+	&__meta>div {
+		display: inline-block;
+	}
+}

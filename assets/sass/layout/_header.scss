@@ -1,0 +1,144 @@
+/* Header
+   ========================================================================== */
+
+.header {}
+
+.navbar {
+	border: 0;
+	&-brand {
+		padding: $navbar-brand-padding-vertical floor( $grid-gutter-width / 2);
+		height: auto;
+		&:hover,
+		&:focus {
+			opacity: 0.8;
+		}
+		&__logo {
+
+		}
+		&__text {
+			display: inline-block;
+			padding: 0.47em 0;
+		}
+	}
+	&-toggle {
+		padding: 0.75rem;
+	}
+	&-nav {
+		&>li {
+			&>a {
+				&:hover,
+				&:focus {}
+			}
+			& .dropdown-toggle .caret {
+				transition: transform 150ms;
+			}
+			.dropdown-menu &>li>a,
+			.dropdown-menu .dropdown-header {
+				padding: $nav-link-padding;
+			}
+		}
+		.open {
+			&>.dropdown-toggle {
+				color: $dropdown-link-hover-color;
+			}
+			&>.dropdown-menu {
+				opacity: 1;
+				pointer-events: all;
+				transform: translateY(0);
+			}
+			&>.dropdown-toggle .caret {
+				transform: rotateZ(-180deg) translateX(-0.125em);
+			}
+		}
+		@media (max-width: 992px) {
+			margin-top: 0;
+			margin-bottom: $navbar-brand-padding-vertical;
+			.open {
+				.dropdown-menu {
+					&>li>a,
+					.dropdown-header {
+						padding: $nav-link-padding;
+					}
+				}
+			}
+		}
+	}
+	&-default {
+		.navbar-nav>.active>a:hover,
+		.navbar-nav>.active>a:focus,
+		.navbar-nav>.open>a.dropdown-toggle,
+		.navbar-nav>.open>.dropdown-menu>.open>a.dropdown-toggle {
+			color: $dropdown-link-hover-color;
+		}
+	}
+	.dropdown {
+		&-menu {
+			padding-top: 0;
+			padding-bottom: 0;
+			border: 0;
+			&>li {
+				&.active>a:hover,
+				&.active>a:focus {
+					color: $dropdown-link-hover-color;
+				}
+				&>a {
+					padding: $nav-link-padding;
+				}
+			}
+		}
+		&-toggle {
+			.caret {
+				width: auto;
+				height: auto;
+				font-size: 1rem;
+				border: 0;
+				&::after {
+					font-family: $font-awesome;
+					font-weight: 900;
+					content: "\f107";
+					margin-left: 0.25rem;
+				}
+			}
+		}
+		.dropdown {
+			margin-left: 1em;
+			.dropdown-menu {
+				margin-left: 1.5em;
+			}
+		}
+		@media (min-width: 992px) {
+			&-menu {
+				display: block;
+				opacity: 0;
+				pointer-events: none;
+				transform: translateY(-0.5em);
+				transition: all 100ms ease-out;
+			}
+			.dropdown {
+				margin-left: 0;
+				.dropdown {
+					&-menu {
+						position: absolute;
+						top: 0;
+						left: 100%;
+						margin: 0;
+					}
+					&-toggle .caret {
+						display: inline-block;
+						float: right;
+						&::after {
+							content: '\f105';
+							margin-right: 0.15em;
+						}
+					}
+				}
+			}
+			.dropdown-toggle:hover+.dropdown-menu,
+			.dropdown-toggle+.dropdown-menu:hover {
+				opacity: 1;
+				pointer-events: all;
+				transform: translateY(0);
+			}
+		}
+	}
+}

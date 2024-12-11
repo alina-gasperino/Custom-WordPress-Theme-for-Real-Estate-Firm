@@ -1,0 +1,21 @@
+/* Footer 
+   ========================================================================== */
+
+.footer {
+	padding: 1.25rem 0;
+	background-color: #f2f2f2;
+	&__nav {
+		margin-bottom: 1rem;
+		& > li {
+			& > a {
+				&:hover,
+				&:focus {
+					
+				}
+			}
+		}
+	}
+	&__copyright {
+
+	}
+}

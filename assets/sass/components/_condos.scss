@@ -1,0 +1,505 @@
+/* Condos
+   ========================================================================== */
+.condos {
+	padding: 1rem;
+
+	&-heading {
+		margin: 0;
+		font-size: 3rem;
+		color: #3b3b3b;
+		font-weight: 700;
+	}
+
+	&-group {
+		padding: 0.5rem;
+
+		@media (min-width: $screen-sm-min) {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+		}
+
+		.project-labels {
+			bottom: auto;
+			top: 10px;
+			left: 5px;
+		}
+
+		.heading {
+			margin: 10px 0;
+			font-size: 1.5rem;
+		}
+
+		.flexslider {
+			background: transparent;
+			margin: 0;
+			padding: 0;
+			border: none;
+		}
+
+		figure {
+			overflow: hidden;
+
+			img {
+				transition: opacity 300ms;
+			}
+		}
+
+		figcaption {
+			h4 {
+				color: #404040;
+				transition: color 300ms;
+				line-height: 1;
+				margin-bottom: 0.2em;
+				font-size: 15px;
+			}
+
+			p {
+				color: #9a9a9a;
+				margin: 0;
+			}
+
+			h4,
+			p {
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+		}
+
+		a {
+
+			&:hover,
+			&:focus {
+				outline: none;
+				text-decoration: none;
+
+				h4 {
+					color: #fb691e;
+				}
+
+				img {
+					opacity: 0.8;
+				}
+			}
+		}
+
+		&--heading {
+			padding: 1rem 0.5rem;
+
+			@media (min-width: $screen-sm-min) {
+				padding-left: 1.5rem;
+				padding-right: 1.5rem;
+			}
+		}
+
+		@media (max-width: $screen-sm) {
+			.slick-arrow {
+				display: none !important;
+			}
+		}
+	}
+
+	.gscroll {
+		.condos-slider__scroller {
+			display: flex;
+			position: initial;
+			scrollbar-width: none;
+		}
+
+		.condos-slider__scroller::-webkit-scrollbar {
+			display: none;
+		}
+
+		.project img {
+			pointer-events: none;
+		}
+	}
+
+	&-slider {
+
+		position: relative;
+		margin: 0 -1rem;
+		white-space: nowrap;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		-ms-touch-action: none;
+
+		&::-webkit-scrollbar {
+			display: none;
+		}
+
+		&__scroller {
+			// position: absolute;
+			z-index: 1;
+			-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+			transform: translateZ(0);
+			user-select: none;
+			text-size-adjust: none;
+		}
+
+		.project {
+			padding: 1rem;
+			width: 200px;
+			display: inline-block;
+
+			figure {
+				border: 1px solid #e7e7e7;
+				border-radius: 1.5rem;
+				overflow: hidden;
+			}
+		}
+
+		.slick-arrow {
+			color: #666;
+			background: transparent;
+			position: absolute;
+			top: -30px;
+			right: 0;
+			left: auto;
+			font-size: 24px;
+			height: 60px;
+			width: 60px;
+		}
+
+		.slick-arrow:hover {
+			background: #ddd;
+		}
+
+		.slick-arrow:before {
+			display: none;
+		}
+
+		.slick-prev {
+			right: 60px;
+		}
+
+		.slick-next {}
+	}
+}
+
+.condos-title {
+	font-size: 1.05rem;
+}
+
+.condos-slider figure {
+	width: 168px;
+	height: 168px;
+	background-color: #eee;
+}
+
+.condos-slider figcaption {
+	font-size: 0.85rem;
+	line-height: 1.5;
+}
+
+.condos-slider figcaption p.announcement {
+	color: #DB5947;
+	font-weight: bold;
+}
+
+.condos-group .heading {
+	margin-top: 0;
+}
+
+.condos-slider--large figure {
+	width: 468px;
+	height: 228px;
+}
+
+.condos-slider__scroller {
+	transform: translate3d(0, 0, 0);
+}
+
+.condos-slider__scroller .project.floorplan figcaption p.prices .price {
+	font-weight: bold;
+	color: black;
+	font-size: 1rem;
+}
+
+/* Condo
+   ========================================================================== */
+.condo {
+	&-area {
+		font-size: 0.85rem;
+	}
+
+	&-floorplan {
+		&-availability {
+			i.fa-check-circle {
+				color: #36A836;
+			}
+
+			i.fa-minus-circle {
+				color: #E39B11;
+			}
+
+			i.fa-star {
+				color: #fe6600;
+			}
+		}
+	}
+}
+
+/* Custom
+   ========================================================================== */
+.condos-slider {
+	.project {
+		// @media (min-width: 480px) {
+			// width: 40vw;
+		// }
+
+		// @media (min-width: 768px) {
+			// width: 25vw;
+		// }
+
+		// @media (min-width: 992px) {
+			// width: 20vw;
+		// }
+
+		// @media (min-width: 1200px) {
+			// width: 200px;
+		// }
+	}
+
+	&__scroller {
+		overflow-y: hidden;
+
+		.project {
+			figure {
+				display: flex;
+				align-items: center;
+				width: 168px;
+				height: 168px;
+				max-width: 100%;
+				text-align: center;
+
+				img {
+					width: 100%;
+					max-width: none;
+				}
+
+				@media (min-width: 480px) {
+					width: 168px;
+					height: 168px;
+				}
+
+				@media (min-width: 768px) {
+					width: 168px;
+					height: 168px;
+				}
+
+				// @media (min-width: 992px) {
+					// width: 15vw;
+					// height: 15vw;
+				// }
+
+				// @media (min-width: 768px) {
+					// width: 168px;
+					// height: 168px;
+				// }
+			}
+		}
+	}
+}
+
+#condos-slider--interviews .condos-slider__scroller .project figure img {
+	width: auto;
+	max-width: 100%;
+}
+#condos-slider--picks {
+	height: 190px;
+
+	a {
+		display: block;
+	}
+
+	figcaption {
+
+		h4,
+		p {
+			white-space: initial;
+		}
+	}
+
+	.condos-slider__scroller {
+		display: flex;
+
+		.project {
+			width: 90vw;
+			flex: 1 0 100%;
+
+			@media (min-width: 768px) {
+				flex: initial;
+			}
+
+			figure {
+				width: 100%;
+				height: auto;
+				background-color: transparent;
+			}
+
+			&--picks {
+				img {
+					max-width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+#condos-slider--interviews {
+	// height: 190px;
+
+	a {
+		display: block;
+	}
+
+	figcaption {
+
+		h4,
+		p {
+			white-space: initial;
+		}
+	}
+
+	.condos-slider__scroller {
+		display: flex;
+
+		.project {
+			width: 60vw;
+			max-width: 400px;
+
+			figure {
+				width: 50vw;
+				height: auto;
+				max-width: 100%;
+				background-color: transparent;
+			}
+
+			&--picks {
+				img {
+					max-width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+#condos-slider--picks {
+	.condo-title {
+		text-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+		color: #414141;
+		font-size: 1.25rem;
+		font-weight: 900;
+		margin-top: 0.75em;
+		margin-bottom: 1rem;
+		small {
+			color: #7f7f7f;
+			font-size: 0.5em;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+	.condo-excerpt {
+		color: #414141;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+	.condo-footer {
+		.btn {
+			color: #414141;
+			font-size: 0.875rem;
+			font-weight: 400;
+			border-radius: 1.188rem;
+			border: 0.063rem solid #cacaca;
+			background-color: #ffffff;
+			padding: 0.5em 1em;
+			i {
+				margin-right: 0.5em;
+			}
+			svg {
+				position: relative;
+				top: 3px;
+				margin-right: 0.5em;
+			}
+			&.btn--featured {
+				color: white;
+				background-color: #377deb;
+			}
+			&:hover,
+			&:focus {
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-md) {
+	.condo-footer li {
+		display: block;
+		margin-bottom: 0.5rem;
+	}
+	#condos-slider--picks .condo-title {
+		small {
+			display: block;
+			margin-top: 0.75em;
+			font-size: 0.75em;
+		}
+	}
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+	#condos-slider--interviews {
+		&.condos-slider.condos-slider--large .project {
+			// width: 40vw;
+		}
+	}
+}
+
+@media (min-width: 480px) {
+	#condos-slider--interviews {
+	}
+}
+
+@media (min-width: 768px) {
+	#condos-slider--picks {
+		.condo-title {
+			font-size: 1.75rem;
+		}
+	}
+
+	#condos-slider--interviews {
+		.project {
+			// width: 27vw;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	#condos-slider--interviews {
+		.condos-slider__scroller .project figure {
+			// width: auto;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	#condos-slider--picks {
+		height: 480px;
+		.project {
+			width: 580px;
+			height: 480px;
+		}
+	}
+}
+
+.jc-left,
+.jc-right {
+	display: none !important;
+}
+

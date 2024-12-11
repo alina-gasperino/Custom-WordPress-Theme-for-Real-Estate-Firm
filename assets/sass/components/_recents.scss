@@ -1,0 +1,64 @@
+/* Recents
+   ========================================================================== */
+
+#recent-updates {
+	z-index:5;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: black;
+	a {
+		text-decoration: underline;
+		color: black;
+		&:hover {
+			color: #FE6600;
+		}
+	}
+	span.badge {
+		margin-right: 10px;
+		line-height: 16px;
+	}
+	@media (min-width: $screen-sm-min) {
+		margin-top: 5rem;
+		margin-bottom: -5rem;
+		position: relative;
+	}
+}
+
+#recently-updated-projects {
+	padding-bottom: 1.5rem;
+	.title {
+		margin-bottom: 40px;
+	}
+	.project {
+		border-bottom: 1px solid #ccc;
+		margin-bottom: 20px;
+		padding-bottom: 10px;
+		.thumbnail {
+			width: 26%;
+			float: left;
+			p {
+				text-align: center;
+				margin-top: 5px;
+			}
+		}
+		.update {
+			float: left;
+			width: 74%;
+			padding-left: 20px;
+			.author {
+				font-style: italic;
+				margin-top: 0;
+				color: gray;
+			}
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+	h3 a {
+		color: inherit;
+	}
+	.post__meta {
+		margin: 0 0 10px 0;
+	}
+}

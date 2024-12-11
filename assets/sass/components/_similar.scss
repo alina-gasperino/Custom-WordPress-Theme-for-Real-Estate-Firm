@@ -1,0 +1,28 @@
+/* Similar
+   ========================================================================== */
+
+.similar {
+	&>.title {
+		margin-bottom: 20px;
+	}
+	&>.grid-sort-container {
+		margin: 0 -0.5rem;
+		height: auto !important;
+	}
+	&>.grid-sort-container>.grid-entry {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		padding: 0 0.5rem;
+		transform: none !important;
+		@media (min-width: $screen-sm-min) {
+			width: 25%;
+		}
+	}
+	.sort_width_container {
+		margin: 0;
+	}
+	nav.pagination {
+		display: none;
+	}
+}

@@ -1,0 +1,34 @@
+/* Builder
+   ========================================================================== */
+
+.b {
+	&-section {
+		margin-bottom: 5rem;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 3rem;
+		}
+	}
+	&-downloads {
+		margin-bottom: 0;
+	}
+	&-project {
+		.project-header {
+			margin-top: 0;
+		}
+		.project-ratings {
+			pointer-events: none;
+		}
+	}
+	&-content {
+		&__area {
+			line-height: 1.5;
+		}
+		.btn {
+			width: 300px;
+			max-width: 100%;
+			border-radius: 4px;
+			white-space: normal;
+			font-weight: bold;
+		}
+	}
+}

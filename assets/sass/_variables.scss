@@ -1,0 +1,145 @@
+//== Brand
+
+$brand-primary   : #fe6600;
+$brand-secondary : #3d80e8;
+
+//== Colors
+
+$orange       : #fe6600;
+$light-orange : #ffdfc9;
+$blue         : #3d80e8;
+$lightblue    : #d6e5fa;
+
+$red: #cf021c;
+$red-lt: rgba(207, 2, 28, 0.2);
+$red-dk: darken($red, 20%);
+
+$green: #8ab953;
+$green-lt: #e8f1dc;
+$green-dk: darken($green, 20%);
+
+$purple: #b13bcc;
+$purple-lt: #e7c3f0;
+$purple-dk: darken($purple, 20%);
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             #b7b7b7;
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$body-bg: #fff;
+
+//== Fonts
+
+$font-awesome           : "Font Awesome 5 Free";
+$font-family-sans-serif : "Roboto", sans-serif;
+$font-size-base         : 16px;
+$font-size-large        : $font-size-base * 1.375;
+$font-size-small        : $font-size-base * 0.875;
+$headings-font-family   : $font-family-sans-serif;
+$headings-font-weight   : 600;
+$headings-line-height   : 1.1;
+$headings-color         : inherit;
+$font-size-h1           : ceil(($font-size-base * 2.215));
+$font-size-h2           : ceil(($font-size-base * 1.75));
+$font-size-h3           : ceil(($font-size-base * 1.25));
+$font-size-h4           : ceil(($font-size-base * 1.125));
+$font-size-h5           : ceil(($font-size-base * 1));
+$font-size-h6           : ceil(($font-size-base * 0.875));
+$line-height-base       : 1.7;
+$line-height-computed   : floor(($font-size-base * $line-height-base));
+
+//== Components
+
+$padding-base-vertical   : 6px;
+$padding-base-horizontal : 12px;
+$border-radius-base      : 0;
+$border-radius-large     : 0;
+
+//== Buttons
+
+$btn-font-weight      : 400;
+$btn-primary-color    : #ffffff;
+$btn-primary-bg       : $brand-primary;
+$btn-primary-border   : $btn-primary-bg;
+$btn-default-color    : #ffffff;
+$btn-default-bg       : #333;
+$btn-default-border   : $btn-default-bg;
+
+//== Forms
+
+$input-bg                : #ffffff;
+$input-color             : #555555;
+$input-border            : #cccccc;
+$input-border-focus      : $brand-primary;
+$input-color-placeholder : #999999;
+
+//== Dropdowns
+
+$dropdown-bg                : #ffffff;
+$dropdown-border            : $dropdown-bg;
+$dropdown-link-color        : #333333;
+$dropdown-link-hover-color  : $brand-secondary;
+$dropdown-link-hover-bg     : transparent;
+$dropdown-link-active-color : $dropdown-link-color;
+$dropdown-link-active-bg    : $dropdown-bg;
+
+//== Navbar
+
+$navbar-brand-height                : 156px;
+$navbar-brand-padding-vertical      : ( $navbar-brand-height / 3 ) / 2;
+$navbar-height                      : $navbar-brand-height + $navbar-brand-padding-vertical;
+$navbar-margin-bottom               : $line-height-computed;
+$navbar-border-radius               : 0;
+$navbar-padding-vertical            : ( $navbar-height - $line-height-computed - 2 + $navbar-brand-padding-vertical ) / 2;
+$navbar-default-color               : #777;
+$navbar-default-bg                  : $gray-lighter;
+$navbar-default-border              : transparent;
+$navbar-default-link-color          : #777;
+$navbar-default-link-hover-color    : $brand-primary;
+$navbar-default-link-hover-bg       : transparent;
+$navbar-default-link-active-color   : $navbar-default-link-color;
+$navbar-default-link-active-bg      : $navbar-default-link-hover-bg;
+$navbar-default-toggle-hover-bg     : lighten( $brand-primary, 45 );
+$navbar-default-toggle-icon-bar-bg  : $brand-primary;
+$navbar-default-toggle-border-color : $navbar-default-toggle-icon-bar-bg;
+
+//== Navs
+
+$nav-link-padding  : 10px 15px;
+$nav-link-hover-bg : transparent;
+
+//== Jumbotron
+
+$jumbotron-padding           : 0;
+$jumbotron-color             : inherit;
+$jumbotron-bg                : transparent;
+$jumbotron-heading-color     : inherit;
+$jumbotron-font-size         : $font-size-large;
+$jumbotron-heading-font-size : $font-size-h1;
+
+//== Alerts
+
+$alert-padding : 1em;
+
+//== Breadcrumbs
+
+$breadcrumb-padding-vertical   : 0.75em;
+$breadcrumb-padding-horizontal : 1.25em;
+$breadcrumb-bg                 : #f5f5f5;
+$breadcrumb-color              : #cccccc;
+$breadcrumb-active-color       : #777777;
+$breadcrumb-separator          : "-";
+
+//== Blockquote
+
+$blockquote-small-color  : black;
+$blockquote-font-size    : 1em;
+
+//== Map
+
+$map-sticky-header-offset  : 45px;
+$map-filter-bar-height     : 54px;
+$map-footer-buttons-height : 45px;

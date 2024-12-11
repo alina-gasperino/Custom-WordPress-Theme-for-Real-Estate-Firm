@@ -1,0 +1,215 @@
+/* Jumbo
+   ========================================================================== */
+
+.jumbo {
+	text-align: center;
+	color: white;
+	position: relative;
+	z-index: 10;
+	margin-bottom: 4rem;
+	.search-form-container {
+		margin: 30px auto;
+	}
+	#s {
+		line-height: 1.25;
+	}
+	#searchform {
+		input {
+			font-size: 1.25rem;
+			font-weight: 300;
+		}
+		#s {
+			padding: 10px 46px 10px 30px;
+			border-radius: 99rem;
+			background: rgba(0, 0, 0, 0.5);
+			border: none !important;
+			color: white;
+			opacity: 1 !important;
+			line-height: 1.4;
+		}
+		#s::-webkit-input-placeholder {
+			color: white;
+			opacity: 0.8;
+			font-weight: 300;
+		}
+		#s:-ms-input-placeholder {
+			color: white;
+			opacity: 0.8;
+			font-weight: 300;
+		}
+		#s::-moz-placeholder {
+			color: white;
+			opacity: 0.8;
+			font-weight: 300;
+		}
+		#searchsubmit {
+			font-size: 1.5rem;
+		}
+		#clear_form {
+			font-size: 1.5rem;
+			right: 4rem;
+			top: 4px;
+		}
+		.ajax_load {
+			left: auto;
+			right: 0;
+			top: 4px;
+			font-size: 1.5rem;
+			padding: 0 1.2rem;
+		}
+	}
+	a:visited {
+		color: inherit;
+	}
+	.ajax_search_response {
+		width: auto;
+		right: 30px;
+		left: 30px;
+	}
+	a.user-location {
+		background: white;
+		color: #232323;
+		vertical-align: middle;
+		line-height: 28px;
+		padding: 10px;
+		border-radius: 4px;
+		display: inline-block;
+	}
+	a.user-location img {
+		vertical-align: middle;
+		display: inline-block;
+		margin-right: 5px;
+		margin-top: -3px;
+	}
+	a.user-location:hover {
+		text-decoration: none;
+		background: #eee;
+		color: black;
+	}
+	@media (max-width: $screen-sm) {
+		#searchform input {
+			font-size: 20px;
+		}
+		#popular_neighbourhoods li {
+			margin: 15px 5px;
+		}
+		.slick-slide {
+			img {
+				display: none;
+				visibility: hidden;
+			}
+		}
+	}
+	@media (min-width: $screen-sm) {
+		height: 30rem;
+	}
+}
+
+.jumbo-slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	&,
+	.slick-list,
+	.slick-track {
+		height: 100%;
+	}
+	h1 {
+		text-shadow: 0 0 5rem #333;
+	}
+	img {
+		width: 100%;
+	}
+	.overlay {
+		background: rgba(0, 0, 0, 0.3);
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 1;
+		top: 0;
+		left: 0;
+	}
+}
+
+.jumbo-slide {
+	&__details {
+		position: absolute;
+		color: white;
+		bottom: 1rem;
+		right: 1rem;
+		font-size: 0.7rem;
+		text-align: right;
+		z-index: 3;
+		&__city,
+		&__project {
+			display: block;
+		}
+		&__city {
+			font-size: 0.75em;
+			font-weight: 500;
+			text-transform: uppercase;
+		}
+		&__project {
+			font-size: 1.375em;
+			font-weight: 700;
+		}
+		@media (min-width: $screen-sm-min) {
+
+			transform: none;
+			font-size: 1rem;
+		}
+	}
+	@media (min-width: $screen-sm-min) {
+		height: 100%;
+	}
+}
+
+.jumbo-content {
+	position: relative;
+	z-index: 2;
+	padding: 4rem 0;
+	.project-info {
+		font-size: 1.4rem;
+		line-height: 1.4rem;
+		padding-top: 30px;
+	}
+	.project-info .project__title {
+		font-weight: bold;
+	}
+	&>h1 {
+		font-size: 2rem !important;
+		font-weight: 600;
+		text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+		position: relative;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	h1 {
+		margin-top: 0;
+	}
+	@media (min-width: $screen-sm-min) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0;
+		.project-info {
+			position: absolute;
+			bottom: 0;
+			right: 40px;
+			text-align: right;
+			padding-bottom: 20px;
+			.project__title {
+				display: block;
+			}
+		}
+	}
+	@media (max-width: $screen-sm) {
+		.user-location {
+			margin-bottom: 3rem;
+		}
+	}
+}

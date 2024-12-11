@@ -1,0 +1,123 @@
+.tax-developer {
+	.site-content header {
+		margin-bottom: 40px;
+
+		h1 {
+			margin: 0 0 20px;
+		}
+
+		a.btn {
+			background: #ececec;
+			font-size: 14px;
+			display: inline-block;
+			padding: 0 1.5em;
+			line-height: 3;
+			margin: 0;
+		}
+	}
+
+	// .selling_construction .condos-slider .project {
+		// width: 300px;
+	// }
+
+	// .selling_construction .condos-slider__scroller .project figure {
+		// width: 268px;
+		// height: 268px;
+	// }
+
+	.resale_construction figcaption h4 {
+		font-size: 15px;
+		line-height: 1;
+		margin-bottom: .2em;
+		transition: color 300ms;
+		color: #404040;
+	}
+
+	.resale_construction figcaption p {
+		font-size: .85rem;
+		color: #9a9a9a;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+
+	.project a {
+		display: block;
+		color: #595b57;
+		position: relative;
+		overflow: hidden;
+		text-decoration: none;
+	}
+
+	.project .floorplan_save {
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		color: #fe6600;
+	}
+
+	@media (min-width: $screen-md-min) {
+		.site-content header {
+			text-align: left;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 27px 0;
+
+			h1 {
+				margin: 0;
+			}
+
+			a.btn {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+
+	.project-statuses {
+		a {
+			margin-right: 20px;
+			border: 1px solid #ccc;
+			display: inline-block;
+			margin: 5px 20px 5px 0;
+		}
+		a i {
+			margin-right: 10px;
+		}
+		a.btn-selling{
+			color: #4a8fde;
+			border-color: rgba(75,143,221, 0.2);
+		}
+		a.btn-selling.active{
+			background: rgba(75,143,221, 0.2);
+			box-shadow: none;
+		}
+		a.btn-registration-phase i{
+			color: #b13bcc;
+		}
+		a.btn-registration-phase{
+			color: #b13bcc;
+		}
+		a.btn-registration-phase.active{
+			background: #b13bcc4d;
+			box-shadow: none;
+		}
+		a.btn-sold-out{
+			color: #cf021c;
+			border-color: rgba(207,2,28, 0.2);
+		}
+		a.btn-sold-out.active{
+			background: rgba(207,2,28, 0.2);
+			box-shadow: none;
+		}
+		a.btn-resale{
+			color: #8ab953;
+			border-color: rgba(138,185,83, 0.2);
+		}
+		a.btn-resale.active{
+			background: rgba(138,185,83, 0.2);
+			box-shadow: none;
+		}
+	}
+}

@@ -1,0 +1,99 @@
+#searchboxes {
+
+	position: relative;
+	z-index: 2;
+
+	header .heading {
+		margin-bottom: 2rem;
+	}
+	.searchbox-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.searchbox {
+		width: 100%;
+		margin-bottom: 20px;
+		border-radius: 1.5rem;
+		background: url('https://s3-ca-central-1.amazonaws.com/talkcondo/wp-content/uploads/2018/09/prime-condos-exterior-rendering.jpg');
+		background-size: cover;
+		@media (min-width: $screen-md-min) {
+			flex: 0 1 49%;
+		}
+	}
+
+	.searchbox-inner {
+		background-image: linear-gradient( transparent, black );
+		position: relative;
+		width: 50%;
+		border-radius: 1.5rem;
+		width: 100%;
+		height: 100%;
+		padding: 30% 3% 2% 3%;
+		font-size: 1.6rem;
+		line-height: 1.2;
+		color: white;
+		@media (min-width: $screen-sm-min) {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
+	}
+
+	.dropdown {
+		display: inline-block;
+	}
+
+	.dropdown::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 2px;
+		border-top: 2px solid white;
+	}
+
+	.dropdown-toggle {
+		z-index: 2;
+		cursor: pointer;
+		// text-decoration: underline;
+		// border-bottom: 4px solid white;
+		position: relative;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.9);
+		font-weight: bold;
+	}
+
+	.dropdown-menu {
+		color: $gray-dark;
+		border-radius: 10px;
+		padding: 10px;
+
+		li {
+			cursor: pointer;
+			padding: 4px;
+		}
+
+		li:hover {
+			color: $blue;
+		}
+	}
+
+	.range-labels {
+		margin: 20px auto;
+	}
+
+	form {
+		margin: 20px 0 0 0;
+		text-align: right;
+	}
+
+	form .btn {
+		vertical-align: bottom;
+	}
+
+	.floorplans__filter-slider {
+		padding: 0;
+	}
+
+}

@@ -1,0 +1,126 @@
+/* Entry 
+   ========================================================================== */
+
+.entry {
+	&-post {
+		&--loop:not(:last-child) {
+            padding-bottom: 2.5em;
+            margin-bottom: 2.25em;
+            border-bottom: 1px solid #eee;
+        }
+	}
+	&-header {
+
+	}
+	&-title {
+		&--loop {
+			a {
+				&:hover,
+				&:focus {
+					color: $brand-primary;
+				}
+			}
+		}
+	}
+	&-meta {
+		
+	}
+	&-time {
+
+	}
+	&-author {
+		&-link {
+
+		}
+		&-name {
+
+		}
+	}
+	&-edit {
+
+	}
+	&-thumb {
+		img {
+
+		}
+	}
+	&-content {
+		font-size: $font-size-base * 1.17;
+		.btn {
+			font-size: 1em;
+			padding: 0.5em 1.5em;
+		}
+		&-wrapper {
+			ul {
+				list-style: disc outside;
+			}
+			li {
+				margin-left: 1em;
+				padding: 3px 0;
+			}
+			div li {
+				text-indent: 0;
+			}
+			.borderlist>li {
+				border-bottom: 1px solid;
+				padding: 5px 0;
+				list-style-position: outside;
+				margin: 0;
+				&:first-child {
+					border-top: 1px solid;
+				}
+			}
+		}
+	}
+	&-author-box {
+		&-avatar {
+
+		}
+		&-title {
+
+		}
+		&-name {
+
+		}
+		&-content {
+
+		}
+	}
+	&-comments {
+
+	}
+	&-footer {
+		
+	}
+	&-pagination {
+		
+	}
+	&-categories {
+		
+	}
+	&-tags {
+		
+	}
+	&-pager {
+		
+	}
+	&-related {
+		&__heading {
+			
+		}
+		&__item {
+			a {
+				&:hover,
+				&:focus {
+					color: $brand-primary;
+				}
+			}	
+			&__thumb {
+				
+			}
+			&__title {
+				
+			}
+		}
+	}
+}
