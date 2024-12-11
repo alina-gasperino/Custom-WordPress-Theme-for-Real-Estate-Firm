@@ -1,0 +1,7 @@
+{
+    "require": {
+        "google/apiclient": "~2.1.0",
+        "willdurand/geocoder": "~3.3.0",
+        "mongodb/mongodb": "^1.4"
+    }
+}
